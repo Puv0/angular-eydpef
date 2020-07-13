@@ -5,6 +5,7 @@ import { HttpClient } from '@angular/common/http';
 @Injectable()
 export class CartService {
  items = [];
+ products = []; 
   constructor(
     private http:HttpClient
   ) { }
@@ -21,6 +22,14 @@ export class CartService {
   clearCart() {
     this.items = [];
     return this.items;
+  }
+
+  getProduct(){
+    return this.products;
+  }
+
+  addProduct(product){
+    this.products.push(product);
   }
 
   getShippingPrices(){

@@ -1,4 +1,10 @@
-export const products = [
+export class Product{
+  name
+  price
+  description
+}
+
+export let products = [
   {
     name: 'Phone XL',
     price: 799,
@@ -15,6 +21,7 @@ export const products = [
     description: ''
   }
 ];
+
 
 
 /*
